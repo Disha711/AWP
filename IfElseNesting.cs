@@ -1,13 +1,13 @@
-class IfElseNesting
+class IfN
 {
-	public static void Main(string[] args)
+	public void DemoFn()
 	{
-		int a=325,b=712,c=478;
+		int a = 325, b = 712, c = 478;
+		System.Console.WriteLine("Largest Value : ");
 		
-		System.Console.WriteLine("Largest value:");
-		if(a>b)
+		if(a > b)
 		{
-			if(a>c)
+			if(a > c)
 			{
 				System.Console.WriteLine(a);
 			}
@@ -18,9 +18,9 @@ class IfElseNesting
 		}
 		else
 		{
-			if(c>b)
+			if(c > b)
 			{
-				System.Console.WriteLine(c);	
+				System.Console.WriteLine(c);
 			}
 			else
 			{
@@ -28,6 +28,13 @@ class IfElseNesting
 			}
 		}
 	}
-}			
-			
-				
+}
+
+class IfElseNesting
+{
+	public static void Main(string[] args)
+	{
+		IfN obj = new IfN();
+		obj.DemoFn();
+	}	
+}

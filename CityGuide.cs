@@ -1,34 +1,41 @@
-using System;
+class Cg
+{
+	public void Demo()
+	{
+		System.Console.WriteLine("Select your choice");
+		System.Console.WriteLine("London");
+		System.Console.WriteLine("Bombay");
+		System.Console.WriteLine("Paris");
+		System.Console.WriteLine("Type your choice");
+
+		string name=  System.Console.ReadLine();
+
+		switch(name)
+		{
+			case "Bombay":
+				System.Console.WriteLine("Bombay:Guide 5");
+				break;
+
+			case "London":
+				System.Console.WriteLine("London:Guide 10");
+				break;
+
+			case "Paris":
+				System.Console.WriteLine("London:Guide 15");
+				break;
+
+			default:
+				System.Console.WriteLine("Invalid Choice");
+				break;
+		}
+	}
+}
 
 class CityGuide
 {
-    public static void Main(string[] args)
-    {
-        Console.WriteLine("Select your choice");
-        Console.WriteLine("London");
-        Console.WriteLine("Bombay");
-        Console.WriteLine("Paris");
-        Console.WriteLine("Type your choice");
-
-        String name = Console.ReadLine();
-
-        switch(name)
-        {
-            case "Bombay":
-                Console.WriteLine("Bombay: Guide 5");
-                break;
-
-            case "London":
-                Console.WriteLine("London: Guide 10");
-                break;
-
-            case "Paris":
-                Console.WriteLine("Paris: Guide 15");
-                break;
-
-            default:
-                Console.WriteLine("Invalid Choice");
-		break;
-		}
+	public static void Main(string[] args)
+	{
+		Cg obj = new Cg();
+		obj.Demo();
 	}
 }
